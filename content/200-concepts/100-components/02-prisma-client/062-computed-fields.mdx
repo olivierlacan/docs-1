@@ -119,7 +119,7 @@ type FirstLastName = {
 }
 
 // Extend the T generic with the fullName attribute
-type WithFullName<T> = T & {
+type WithFullName<T> = T | {
   fullName: string
 }
 
